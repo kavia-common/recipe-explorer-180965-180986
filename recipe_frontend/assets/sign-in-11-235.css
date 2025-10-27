@@ -1,0 +1,262 @@
+@import url('./common.css');
+
+/* Screen container */
+.screen-sign-in-11-235 {
+  position: relative;
+  width: 375px;
+  height: 812px;
+  background-color: var(--style-10-bg);
+  border-radius: var(--style-10-radius);
+  overflow: hidden;
+}
+
+/* Root frame origin (426, -430); child positions are relative to this container */
+
+/* Status Bar (component) at (x:426, y:-430) => left:0, top:0 */
+.status-bar {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 375px;
+  height: 44px;
+}
+.status-bar .symbols {
+  position: absolute;
+  left: 293.5px; /* 719.5 - 426 */
+  top: 16.6px;  /* -413.4 - (-430) = 16.6 */
+  width: 68px;
+  height: 13px;
+}
+.status-bar .battery { position: absolute; left: 336px; top: 17.16px; width: 24.5px; height: 11.5px; } /* 762-426, -412.84 -(-430) */
+.status-bar .battery .rect { position: absolute; left: 0; top: 0; width: 24.5px; height: 11.5px; background-color: var(--style-33-bg); opacity: var(--style-33-opacity); }
+.status-bar .battery .rect .exclude .path1 { position: absolute; left: 1px; top: 1px; width: 20px; height: 9.5px; }
+.status-bar .battery .rect .exclude .path2 { position: absolute; left: 0px; top: 0px; width: 22px; height: 11.5px; }
+.status-bar .battery .cap { position: absolute; left: 2px; top: 1.92px; width: 18px; height: 7.67px; background-color: var(--style-34-bg); border: var(--style-34-border-width) solid var(--style-34-border-color); border-radius: var(--style-34-radius); }
+
+.status-bar .combined-shape { position: absolute; left: 293.5px; top: 17.6px; width: 17.1px; height: 10.7px; background-color: var(--style-35-bg, var(--color-303030)); }
+.status-bar .wifi { position: absolute; left: 315.6px; top: 17.4px; width: 15.4px; height: 11.06px; background-color: var(--style-35-bg, var(--color-303030)); }
+
+.status-bar .time {
+  position: absolute;
+  left: 0px; /* frame at x:426 equals root left */
+  top: 12px; /* -418 - (-430) = 12 */
+  width: 180px;
+  height: 22px;
+}
+.status-bar .time .value {
+  position: absolute;
+  left: 29.5px; /* 455.5 - 426 */
+  top: 14px;   /* -416 - (-430) = 14 */
+  width: 37px; height: 18px;
+  font-family: var(--typo-67-family);
+  font-size: var(--typo-67-size);
+  font-weight: var(--typo-67-weight);
+  line-height: var(--typo-67-line-height);
+  letter-spacing: var(--typo-67-letter-spacing);
+  color: var(--typo-67-color);
+}
+
+/* Title group at (456, -336) => (30, 94) */
+.title-group {
+  position: absolute;
+  left: 30px;
+  top: 94px;
+  width: 155px; height: 75px;
+}
+.title-group .hello {
+  position: absolute;
+  left: 0px; top: 0px; width: 84px; height: 45px;
+  font-family: var(--typo-60-family);
+  font-size: var(--typo-60-size);
+  font-weight: var(--typo-60-weight);
+  line-height: var(--typo-60-line-height);
+  color: var(--typo-60-color);
+}
+.title-group .welcome {
+  position: absolute;
+  left: 0px; top: 45px; width: 155px; height: 30px;
+  font-family: var(--typo-61-family);
+  font-size: var(--typo-61-size);
+  font-weight: var(--typo-61-weight);
+  line-height: var(--typo-61-line-height);
+  color: var(--typo-61-color);
+}
+
+/* Input field 1 Email at (456, -204) => (30, 226) size 315x81 */
+.input-email {
+  position: absolute;
+  left: 30px; top: 226px; width: 315px; height: 81px;
+}
+.input-email .label {
+  position: absolute;
+  left: 0px; top: 0px; width: 38px; height: 21px;
+  font-family: var(--typo-66-family);
+  font-size: var(--typo-66-size);
+  font-weight: var(--typo-66-weight);
+  line-height: var(--typo-66-line-height);
+  color: var(--typo-66-color);
+}
+.input-email .rect {
+  position: absolute;
+  left: 0px; top: 26px; width: 315px; height: 55px;
+  border: var(--style-30-border-width) solid var(--style-30-border-color);
+  border-radius: var(--style-30-radius);
+  background: transparent;
+}
+.input-email .placeholder {
+  position: absolute;
+  left: 20px; top: 45px; width: 61px; height: 17px;
+  font-family: var(--typo-65-family);
+  font-size: var(--typo-65-size);
+  font-weight: var(--typo-65-weight);
+  line-height: var(--typo-65-line-height);
+  color: var(--typo-65-color);
+}
+
+/* Input field 2 Password at (456, -93) => (30, 337) */
+.input-password {
+  position: absolute;
+  left: 30px; top: 337px; width: 315px; height: 81px;
+}
+.input-password .label {
+  position: absolute;
+  left: 0px; top: 0px; width: 107px; height: 21px;
+  font-family: var(--typo-66-family);
+  font-size: var(--typo-66-size);
+  font-weight: var(--typo-66-weight);
+  line-height: var(--typo-66-line-height);
+  color: var(--typo-66-color);
+}
+.input-password .rect {
+  position: absolute;
+  left: 0px; top: 26px; width: 315px; height: 55px;
+  border: var(--style-30-border-width) solid var(--style-30-border-color);
+  border-radius: var(--style-30-radius);
+  background: transparent;
+}
+.input-password .placeholder {
+  position: absolute;
+  left: 20px; top: 45px; width: 120px; height: 17px;
+  font-family: var(--typo-65-family);
+  font-size: var(--typo-65-size);
+  font-weight: var(--typo-65-weight);
+  line-height: var(--typo-65-line-height);
+  color: var(--typo-65-color);
+}
+
+/* Forgot Password at (466, 8) => (40, 438) */
+.forgot-password {
+  position: absolute;
+  left: 40px; top: 438px; width: 97px; height: 17px;
+}
+.forgot-password .text {
+  position: absolute;
+  left: 0px; top: 0px; width: 97px; height: 17px;
+  font-family: var(--typo-62-family);
+  font-size: var(--typo-62-size);
+  font-weight: var(--typo-62-weight);
+  line-height: var(--typo-62-line-height);
+  color: var(--typo-62-color);
+}
+
+/* Or Sign in With line group at (516, 130) => (90, 560) */
+.divider {
+  position: absolute;
+  left: 90px; top: 560px; width: 195px; height: 17px;
+}
+.divider .line-left {
+  position: absolute;
+  left: 0px; top: 9px; width: 50px; height: 0px;
+  border-top: var(--style-28-border-width) solid var(--style-28-border-color);
+}
+.divider .line-right {
+  position: absolute;
+  left: 145px; top: 9px; width: 50px; height: 0px;
+  border-top: var(--style-28-border-width) solid var(--style-28-border-color);
+}
+.divider .label {
+  position: absolute;
+  left: 57px; top: 0px; width: 81px; height: 17px;
+  font-family: var(--typo-64-family);
+  font-size: var(--typo-64-size);
+  font-weight: var(--typo-64-weight);
+  line-height: var(--typo-64-line-height);
+  color: var(--typo-64-color);
+}
+
+/* Social Buttons (each size 44x44) */
+/* Google Button at (557, 167) => (131, 597) */
+.social-google {
+  position: absolute;
+  left: 131px; top: 597px; width: 44px; height: 44px;
+}
+.social-google .bg {
+  position: absolute; left: 0; top: 0; width: 44px; height: 44px;
+  background-color: var(--style-126-bg);
+  border-radius: var(--style-126-radius);
+  box-shadow: var(--style-126-shadow);
+}
+.social-google .google-icon {
+  position: absolute; left: 10px; top: 10px; width: 24px; height: 24px;
+}
+
+/* Facebook Button at (626, 167) => (200, 597) */
+.social-facebook {
+  position: absolute;
+  left: 200px; top: 597px; width: 44px; height: 44px;
+}
+.social-facebook .bg {
+  position: absolute; left: 0; top: 0; width: 44px; height: 44px;
+  background-color: var(--style-126-bg);
+  border-radius: var(--style-126-radius);
+  box-shadow: var(--style-126-shadow);
+}
+.social-facebook .fb-icon {
+  position: absolute; left: 10px; top: 10px; width: 24px; height: 24px;
+}
+
+/* Big Button (Sign In) at (456, 50) => (30, 480), size 315x60 */
+.big-button {
+  position: absolute;
+  left: 30px; top: 480px; width: 315px; height: 60px;
+  display: flex; flex-direction: row; align-items: center; justify-content: center;
+  background-color: var(--style-11-bg);
+  border-radius: var(--style-11-radius);
+  gap: 8px;
+}
+.big-button .label {
+  font-family: var(--typo-58-family);
+  font-size: var(--typo-58-size);
+  font-weight: var(--typo-58-weight);
+  line-height: var(--typo-58-line-height);
+  color: var(--typo-58-color);
+}
+.big-button .arrow {
+  width: 20px; height: 20px;
+}
+
+/* Bottom Home Indicator at (426, 348) => (0, 778) size 375x34 */
+.home-indicator {
+  position: absolute;
+  left: 0px; top: 778px; width: 375px; height: 34px;
+}
+.home-indicator .line {
+  position: absolute;
+  left: 120px; /* 546 - 426 */
+  top: 21px;   /* 369 - (-430) = 799; but relative to top 778 -> 21 */
+  width: 135px; height: 5px;
+  background-color: var(--style-32-bg);
+  border-radius: var(--style-32-radius);
+}
+
+/* Bottom sign-up text at (525, 266) => (99, 696) */
+.signup-text {
+  position: absolute;
+  left: 99px; top: 696px; width: 177px; height: 17px;
+  font-family: var(--typo-63-family);
+  font-size: var(--typo-63-size);
+  font-weight: var(--typo-63-weight);
+  line-height: var(--typo-63-line-height);
+  color: var(--typo-63-color);
+  text-align: left;
+}
